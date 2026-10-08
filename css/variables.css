@@ -1,0 +1,13 @@
+:root {
+    --bg-main: #f9f9f6;
+    --bg-card: #ffffff;
+    --bg-card-green: #eef2eb;
+    --text-main: #2d3730;
+    --text-muted: #7a8b7c;
+    --primary-green: #4b604e;
+    --accent-green: #a5b5a2;
+    --border-color: #e5e9e2;
+    --radius-lg: 16px;
+    --radius-md: 12px;
+    --shadow-sm: 0 2px 8px rgba(0,0,0,0.04);
+}
