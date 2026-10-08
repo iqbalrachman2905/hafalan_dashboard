@@ -1,0 +1,16 @@
+.container { padding: 80px 20px 90px; max-width: 480px; margin: 0 auto; }
+.app-header {
+    position: fixed; top: 0; left: 0; right: 0;
+    height: 60px; background: var(--bg-main);
+    display: flex; justify-content: space-between; align-items: center;
+    padding: 0 20px; z-index: 100; border-bottom: 1px solid var(--border-color);
+}
+.bottom-nav {
+    position: fixed; bottom: 0; left: 0; right: 0;
+    height: 70px; background: var(--bg-card);
+    display: flex; justify-content: space-around; align-items: center;
+    border-top: 1px solid var(--border-color); z-index: 100;
+}
+.nav-item { text-decoration: none; color: var(--text-muted); display: flex; flex-direction: column; align-items: center; font-size: 11px; }
+.nav-item.active { color: var(--primary-green); }
+.nav-icon { font-size: 20px; margin-bottom: 4px; }
