@@ -1,0 +1,9 @@
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+    background-color: var(--bg-main);
+    color: var(--text-main);
+    font-family: 'Inter', sans-serif;
+    -webkit-font-smoothing: antialiased;
+}
+h1, h2, h3 { font-family: 'Lora', serif; font-weight: 600; }
+.text-muted { color: var(--text-muted); }
