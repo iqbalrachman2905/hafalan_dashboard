@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ruang Belajar Santri - Hafalan Qur'an</title>
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/components.css">
+    <!-- Google Fonts (Serif untuk salam, Sans-serif untuk UI) -->
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@500;600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- App Bar -->
+    <header class="app-header">
+        <div class="menu-icon">☰</div>
+        <div class="header-title">Ruang belajar <span class="text-muted">/ Ringkasan</span></div>
+        <div class="notif-icon">🔔<span id="notif-badge" class="badge hidden"></span></div>
+    </header>
+
+    <!-- Main Content Area -->
+    <main id="app-content" class="container">
+        
+        <!-- Greeting Card -->
+        <section class="greeting-card">
+            <p class="subtitle">SELAMAT DATANG KEMBALI</p>
+            <h1 class="greeting-title">Assalamu'alaikum,<br><span id="user-name">Santri</span></h1>
+            <p class="greeting-desc">Hari yang baik untuk melangkah satu ayat lebih dekat.</p>
+            <div class="islamic-pattern"></div>
+        </section>
+
+        <!-- Gamifikasi Stats -->
+        <section class="stats-grid">
+            <div class="stat-card">
+                <div class="stat-header">
+                    <span>Level</span>
+                    <span class="icon">⭐</span>
+                </div>
+                <h2 id="stat-level">1</h2>
+                <p class="stat-desc" id="stat-xp">0 XP</p>
+            </div>
+            <div class="stat-card">
+                <div class="stat-header">
+                    <span>Streak</span>
+                    <span class="icon">🔥</span>
+                </div>
+                <h2 id="stat-streak">0</h2>
+                <p class="stat-desc">hari beruntun</p>
+            </div>
+        </section>
+
+        <!-- Daily Missions -->
+        <section class="section-container">
+            <div class="section-header">
+                <p class="subtitle">LANGKAH BERIKUTNYA</p>
+                <h2>Misi Murojaah Hari Ini</h2>
+            </div>
+            <div id="mission-list" class="mission-list">
+                <!-- Misi akan di-render di sini oleh JS -->
+                <div class="empty-state">
+                    <span class="empty-icon">📖</span>
+                    <h3>Memuat data...</h3>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Bottom Navigation -->
+    <nav class="bottom-nav">
+        <a href="#" class="nav-item active">
+            <span class="nav-icon">🏠</span>
+            <span>Ringkasan</span>
+        </a>
+        <a href="#" class="nav-item">
+            <span class="nav-icon">💡</span>
+            <span>Flashcard</span>
+        </a>
+        <a href="#" class="nav-item" onclick="logout()">
+            <span class="nav-icon">🚪</span>
+            <span>Keluar</span>
+        </a>
+    </nav>
+
+    <!-- Scripts -->
+    <script src="js/config.js"></script>
+    <script src="js/api.js"></script>
+    <script src="js/auth.js"></script>
+    <script src="js/dashboard-santri.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>
